@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100svw;
+}
+
+.header {
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bookAddButton {
+    display: flex;
+    height: 3rem;
+    width: 8rem;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.main {
+    display: flex;
+    background-image: url(Books.jpg);
+    flex: 1;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
