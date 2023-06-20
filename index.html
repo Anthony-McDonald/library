@@ -5,16 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1 class="headertext">Fancy Online Library Service!</h1>
-            <button class="bookAddButton" type="submit">Add a book!</button>
+            <button class="bookAddButton" id="button" type="button">Add a book!</button>
         </div>
         <div class="main">
-            main
+
+            <div class="tablediv">
+                <table class="bookList">
+                    <tr>
+                      <th>Book Name</th>
+                      <th>Book Author</th>
+                      <th>Book Pages</th>
+                      <th>Book Read</th>
+                      <th>Remove from table</th>
+                    </tr>
+                    <!-- <tr>
+                      <td>Alfreds Futterkiste</td>
+                      <td>Maria Anders</td>
+                      <td>Germany</td>
+                    </tr>
+                    <tr>
+                      <td>Centro comercial Moctezuma</td>
+                      <td>Francisco Chang</td>
+                      <td>Mexico</td>
+                    </tr>
+                    <tr>
+                      <td>Ernst Handel</td>
+                      <td>Roland Mendel</td>
+                      <td>Austria</td>
+                    </tr>
+                    <tr>
+                      <td>Island Trading</td>
+                      <td>Helen Bennett</td>
+                      <td>UK</td>
+                    </tr>
+                    <tr>
+                      <td>Laughing Bacchus Winecellars</td>
+                      <td>Yoshi Tannamuri</td>
+                      <td>Canada</td>
+                    </tr>
+                    <tr>
+                      <td>Magazzini Alimentari Riuniti</td>
+                      <td>Giovanni Rovelli</td>
+                      <td>Italy</td>
+                    </tr> -->
+                  </table>
+            </div>
+            <div class="form" style="display:none">
+                <div class="formborder">
+                    <form action="push">
+                        <h2 class="formtitle">Enter the Book's Info</h2>
+
+                        <div class="formdiv">
+                            <label>
+                                Book name
+                                <input type="text" name="bName" id="bName">
+                            </label>
+                            <label>
+                                Book Author
+                                <input type="text" name="bAuthor" id="bAuthor">
+                            </label>
+                            <label>
+                                Book Pages
+                                <input type="number" name="bPages" id="bPages">
+                            </label>
+                            <label>
+                                Book Read
+                                <div class="formradio">
+                                    <label class="radiolabel">
+                                        Yes
+                                        <input type="radio" name="affirmative" value="Read" id="bRead">
+                                    </label>
+                                    <label class="radiolabel">
+                                        No
+                                        <input type="radio" name="affirmative" value="Not Read" id="bNotRead">
+                                    </label>
+                                </div>
+
+                            </label>
+                        </div>
+                        <div class="formbuttondiv"><button type="button" class="formbutton">Done</button></div>
+                    </form>
+                </div>
+            </div>
         </div>
         <div class="footer">
             Made by Anthony McDonald
@@ -22,3 +100,6 @@
     </div>
 </body>
 </html>
+
+<!-- put style='display:none' in to the form div 
+arguments to make form invisible by default -->

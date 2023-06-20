@@ -1,8 +1,12 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100svw;
+    justify-content: space-around;
+    height: 100%;
+}
+
+html, body, .wrapper {
+    height: 100%;
 }
 
 .header {
@@ -27,7 +31,112 @@
     display: flex;
     background-image: url(Books.jpg);
     flex: 1;
+    justify-content: center;
+    align-items: start;
+
 }
+
+.bookList {
+    background-color: white;
+    border: black 3px solid;
+}
+
+
+.tablediv {
+    margin-top: 5rem;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.form {
+    background-color: white;
+    width: 23rem;
+    height: 31rem;
+    display: flex;
+    border-radius: 20px;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+.formradio {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 0;
+}
+
+.radiolabel {
+    width: 5rem;
+}
+
+
+label, input {
+    display: block;
+}
+
+input {
+    margin-left: 2.2rem;
+}
+
+label {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.formbutton {
+    width: 15rem;
+    height: 3rem;
+    border-color: rgb(43, 130, 165);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgb(159, 238, 238);
+}
+
+.formbuttondiv {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.formborder {
+    display: flex;
+    padding: 30px;
+    flex: 1;
+    background-color: rgb(170, 219, 219);
+    margin: 20px;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+
+.formtitle {
+    text-align: center;
+    margin-top: -1rem;
+}
+
+.formheader {
+    font-weight: bold;
+}
+
 
 .footer {
     display: flex;
